@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine 💘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating hearts background -->
+  <div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
+
+  <!-- ========== PAGE 1: PROPOSAL ========== -->
+  <section id="proposal-page" class="page active">
+    <div class="proposal-card card">
+      <div class="card-hearts">💖 ❤️ 💕 🌹 💘</div>
+      <h1 class="proposal-title">Can you be my Valentine? 💘</h1>
+      <div class="button-group">
+        <button type="button" id="btn-yes" class="btn btn-yes">YES ❤️</button>
+        <button type="button" id="btn-no" class="btn btn-no" title="No is not an option 😜">NO 💔</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PAGE 2: QUIZ ========== -->
+  <section id="quiz-page" class="page">
+    <div class="quiz-container">
+      <h1 class="quiz-title">Let's see how well you know us 💕</h1>
+      <p class="quiz-instructions">15 multiple-choice questions • One correct answer per question • Each correct = 1 point</p>
+
+      <form id="quiz-form" class="quiz-form">
+        <!-- Questions are injected by script.js -->
+        <div id="questions-container"></div>
+        <button type="submit" class="btn btn-submit">Submit 💌</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== PAGE 3: MEMORY LANE ========== -->
+  <section id="memory-page" class="page">
+    <!-- Extra sparkles layer for this page -->
+    <div class="sparkles-bg" id="sparklesBg" aria-hidden="true"></div>
+
+    <div class="memory-container">
+      <header class="memory-header">
+        <h1 class="memory-title">Our Memories Together 💞</h1>
+        <p class="memory-subtitle">Every moment with you is my favorite memory 🥹❤️</p>
+
+        <div class="memory-actions">
+          <button type="button" id="btn-slideshow" class="btn btn-yes btn-small">Play Memories ▶️</button>
+          <button type="button" id="btn-music" class="btn btn-submit btn-small">Music: Off 🎵</button>
+        </div>
+      </header>
+
+      <div id="memory-grid" class="memory-grid" aria-label="Memory photo grid">
+        <!-- Photo placeholders (replace src later) -->
+        <figure class="memory-card">
+          <img class="memory-img" src="https://comichub.blob.core.windows.net/high/03f03259-c159-4e19-ac15-f5c2e28b1be7.jpg" alt="Memory 1">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Our first smile together 💕</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://www.pngkey.com/png/detail/127-1275461_character-photos-and-descriptions-from-disneys-zootopia-judy.png" alt="Memory 2">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">That random call moment 😆</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://preview.redd.it/judy-is-a-disney-prince-and-nick-is-a-disney-princess-v0-kq4ei94u70081.jpg?width=640&crop=smart&auto=webp&s=5902e3f8ad5e0dfd681136256a2aae7cf3804a4e" alt="Memory 3">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Distance but always close ❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbJWJ2XYhqd1unwGGvSpE8q56Z5CDgYH8Mw&s" alt="Memory 4">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Your laugh = my favorite sound 😘</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://variety.com/wp-content/uploads/2024/12/MCDZOOT_EC011.jpg?crop=377px%2C0px%2C1207px%2C804px&resize=1000%2C667" alt="Memory 5">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">The “I miss you” 🌹</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-maZBf8A5yaEthRX_C1SkImVfne4y6gjkag&s" alt="Memory 6">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Small moments, big love 💘</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://i.scdn.co/image/ab67616d00001e02c580213f920656177dba6392" alt="Memory 7">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Our silly faces 😜💕</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttw5A3WvLCLJReOeYRltgR7_Gf0u1Kfvk5w&s" alt="Memory 8">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">One day, no more distance 🥹❤️</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://static0.moviewebimages.com/wordpress/wp-content/uploads/2025/11/judy-hopps-nick-wilde-zootopia-2.jpg?w=1600&h=1200&fit=crop" alt="Memory 9">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Our cutest “goodnight” calls 😴💖</figcaption>
+        </figure>
+        <figure class="memory-card">
+          <img class="memory-img" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/02/zootopia-2-ginnifer-goodwin-jason-bateman.jpg?w=1200&h=675&fit=crop" alt="Memory 10">
+          <!-- Replace with your memory photo -->
+          <figcaption class="memory-caption">Forever my favorite person 💍❤️</figcaption>
+        </figure>
+      </div>
+
+      <p class="memory-hint">Hover the photos for heart pops… click for a sweet surprise 💖</p>
+
+      <!-- Optional music (muted by default). Add your file as love-music.mp3 in this folder. -->
+      <audio id="memory-music" loop muted preload="none">
+        <source src="image/Afeemi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- ========== RESULT OVERLAY ========== -->
+  <div id="result-overlay" class="result-overlay hidden">
+    <div class="result-card card">
+      <h2 id="result-title">Your Score</h2>
+      <p id="result-score" class="result-score"></p>
+      <p id="result-message" class="result-message"></p>
+      <div class="result-actions">
+        <button type="button" id="btn-memories" class="btn btn-submit">See Our Memories 💞</button>
+        <button type="button" id="btn-close-result" class="btn btn-yes">Close 💖</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SWEET MESSAGE POPUP (for Memory Lane clicks) ========== -->
+  <div id="sweet-overlay" class="result-overlay hidden">
+    <div class="result-card card">
+      <h2 id="sweet-title">Aww 💖</h2>
+      <p id="sweet-message" class="result-message"></p>
+      <button type="button" id="btn-close-sweet" class="btn btn-yes">Close 💕</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
